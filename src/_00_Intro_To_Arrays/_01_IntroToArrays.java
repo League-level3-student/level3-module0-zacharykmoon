@@ -5,8 +5,15 @@ import java.util.Random;
 public class _01_IntroToArrays {
     public static void main(String[] args) {
         // 1. declare and Initialize an array 5 Strings
-
+    		String[] names = new String[5];
         // 2. print the third element in the array
+    		names[0] = "Barbie";
+    		names[1] = "Ahsoka Tano";
+    		names[2] = "Miles Morales";
+    		names[3] = "Optimus Prime";
+    		names[4] = "Star Lord";
+    				System.out.println(names);
+
 
         // 3. set the third element to a different value
 
@@ -14,7 +21,11 @@ public class _01_IntroToArrays {
 
         // 5. use a for loop to set all the elements in the array to a string
         //    of your choice
-
+    					for(int i=0; i<names.length;i++)
+    					{
+    						String s = names[i];
+    						
+    					}
         // 6. use a for loop to print all the values in the array
         //    BE SURE TO USE THE ARRAY'S length VARIABLE
 
