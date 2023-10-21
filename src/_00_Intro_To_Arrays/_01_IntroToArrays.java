@@ -23,7 +23,7 @@ public class _01_IntroToArrays {
     				        }
         // 5. use a for loop to set all the elements in the array to a string
         //    of your choice
-    						for (String strings : names) {
+    						for (String i : names) {
     				    		//start here
     							System.out.println(i);				    	}
         // 6. use a for loop to print all the values in the array
@@ -53,7 +53,15 @@ public class _01_IntroToArrays {
     		}
     	}
         // 10 print the entire array to see if step 8 was correct
-
+    	System.out.println(smallest);
+        // 10 print the entire array to see if step 8 was correct
+    	for (int i=0; i<fiftyInts.length; i++) {
+    		System.out.println(fiftyInts[i]);
+    	}
+        // 11. print the largest number in the array.
+    	System.out.println(largest);
+        // 12. print only the last element in the array
+    	System.out.println(fiftyInts[fiftyInts.length-1]);
         // 11. print the largest number in the array.
 
         // 12. print only the last element in the array
