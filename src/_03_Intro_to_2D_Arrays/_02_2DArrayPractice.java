@@ -146,7 +146,11 @@ public class _02_2DArrayPractice {
      */
     public Integer getSumByRow(int[][] matrix, int row) {
         
-        return null;
+    	 int sum = 0;
+         for (int i = 0; i<matrix[row].length; i++) {
+         	sum = sum+matrix[row][i];
+         }
+         return sum;
     }
     
     /*
@@ -155,7 +159,12 @@ public class _02_2DArrayPractice {
      */
     public Integer getSumByColumn(int[][] matrix, int col) {
         
-        return null;
+    	 int sum = 0;
+    	 for(int i = 0; i<matrix.length;i++)
+    	 {
+    		 sum= sum+matrix[i][col];
+    	 }
+    	 return sum;
     }
     
     /*
@@ -179,21 +188,49 @@ public class _02_2DArrayPractice {
      */
     public Integer getEastNeighbor(int[][] matrix, int row, int col) {
         
-        return null;
+    	  if (col+1 <matrix[row].length) {
+    	    	
+          	return matrix[row][col+1];
+          }
+          else {
+          	return null;
+          }
     }
     
     public Integer getWestNeighbor(int[][] matrix, int row, int col) {
         
-        return null;
+    	  if (col-1 >=0) {
+    	    	
+          	return matrix[row][col-1];
+          }
+          else {
+          	return null;
+          }
     }
     
     public Integer getNorthNeighbor(int[][] matrix, int row, int col) {
         
-        return null;
+  	  if (row-1 >=0) {
+	    	
+        	return matrix[row-1][col];
+        }
+        else {
+        	return null;
+        
+        
+    }
     }
     
     public Integer getSouthNeighbor(int[][] matrix, int row, int col) {
         
-        return null;
+if (row+1 <matrix[row].length) {
+	    	
+        	return matrix[row+1][col];
+        }
+        else {
+        	return null;
+        
+        
+    }
     }
 }
